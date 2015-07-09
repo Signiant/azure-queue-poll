@@ -32,7 +32,7 @@ def checkQueue(aName,aKey,aQueue):
 						print "Messages in Queue: " + count
 						messages = queue_service.get_messages(aQueue)
 						for message in messages:
-   							print "Message " + message.message_id +" : " message.message_text
+   							print "Message " + message.message_id + " : " + message.message_text
     							queue_service.delete_message(aQueue, message.message_id, message.pop_receipt)
 				except:
 					print "Could not read queue"	

@@ -1,0 +1,5 @@
+{
+	"account": "AZURE STORAGE ACCOUNT NAME", 
+	"key": "AZURE STORAGE ACCOUNT KEY",
+	"queue": "AZURE STORAGE QUEUE NAME"
+}

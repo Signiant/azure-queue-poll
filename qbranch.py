@@ -27,9 +27,9 @@ def checkQueue(aName,aKey,aQueue):
 			else:
 				try:
 					count = queue_metadata['x-ms-approximate-messages-count']
-					print "Queue is empty"
+					print aQueue + "queue is empty"
 					if int(count) > 0:
-						print "Messages in Queue: " + count
+						print "Messages in " + aQueue + " queue: " + count
 						messages = queue_service.get_messages(aQueue)
 						for message in messages:
    							print "Message " + message.message_id + " : " + message.message_text
